@@ -1,0 +1,36 @@
+name: Deploy Event Banner
+
+on:
+  push:
+    branches: [ main ]
+  repository_dispatch:
+    types: [ event_settings_updated ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Purge jsDelivr cache
+        run: |
+          # 이벤트 배너 스크립트 캐시 삭제
+          curl -X POST "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/event-banner.js"
+          
+          # 설정 파일 캐시 삭제 (사이트 ID가 전달된 경우)
+          if [ -n "${{ github.event.client_payload.site_id }}" ]; then
+            curl -X POST "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/${{ github.event.client_payload.site_id }}-settings.json"
+          else
+            # 모든 설정 파일 찾기
+            for file in *-settings.json; do
+              if [ -f "$file" ]; then
+                curl -X POST "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/$file"
+              fi
+            done
+          fi
