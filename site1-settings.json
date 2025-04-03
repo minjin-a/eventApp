@@ -1,13 +1,13 @@
 {
-    "isEventActive": true,
-    "eventTitle": "\ud83d\udd25 \uc624\ub298 \ub2e8 \ud558\ub8e8! \uc5fc\uc0c9\uc57d 1+5555555555 \ud2b9\uac00 \ud83d\udd25",
+    "isEventActive": false,
+    "eventTitle": "\ud83d\udd25 \uc624\ub298 \ub2e8 \ud558\ub8e8! \ud2b9\ubcc4 \uc774\ubca4\ud2b8 \ud83d\udd25",
     "eventSubtitle": "\uc7ac\uace0 \uc18c\uc9c4 \uc2dc \uc885\ub8cc",
-    "eventEndTime": "2025-04-03T17:55",
+    "eventEndTime": "2025-04-04T12:05",
     "eventLink": "https:\/\/example.com\/event",
     "defaultMessage": "\ubb34\ub8cc \ubc30\uc1a1 \uc774\ubca4\ud2b8 \uc9c4\ud589\uc911! 5\ub9cc\uc6d0 \uc774\uc0c1 \uad6c\ub9e4\uc2dc \uc804\uad6d \ubb34\ub8cc\ubc30\uc1a1",
     "defaultMessageLink": "https:\/\/example.com\/shipping",
-    "defaultBgColor": "#182c3f",
-    "version": 1743584318,
-    "lastUpdated": "2025-04-02 17:58:38",
+    "defaultBgColor": "#e53e3e",
+    "version": 1743649576,
+    "lastUpdated": "2025-04-03 12:06:16",
     "siteId": "site1"
 }
