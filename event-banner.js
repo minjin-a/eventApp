@@ -113,6 +113,14 @@
   // 설정 가져오기 - 버전 파라미터 사용
   fetch(
     `https://cdn.jsdelivr.net/gh/minjin-a/eventApp@main/${siteId}-settings.json?v=${version}`,
+    {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+      },
+      cache: 'no-store' // 이 옵션은 최신 fetch API에서 지원됩니다
+    }
   )
     .then((response) => response.json())
     .then((settings) => {
