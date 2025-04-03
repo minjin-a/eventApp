@@ -2,12 +2,12 @@
     "isEventActive": true,
     "eventTitle": "\ud83d\udd25 \uc624\ub298 \ub2e8 \ud558\ub8e8! \ud2b9\ubcc4 \uc774\ubca4\ud2b8 \ud83d\udd25",
     "eventSubtitle": "\uc7ac\uace0 \uc18c\uc9c4 \uc2dc \uc885\ub8cc",
-    "eventEndTime": "2025-04-04T13:26",
+    "eventEndTime": "2025-04-04T19:26",
     "eventLink": "https:\/\/example.com\/event",
     "defaultMessage": "\ubb34\ub8cc \ubc30\uc1a1 \uc774\ubca4\ud2b8 \uc9c4\ud589\uc911! 5\ub9cc\uc6d0 \uc774\uc0c1 \uad6c\ub9e4\uc2dc \uc804\uad6d \ubb34\ub8cc\ubc30\uc1a1",
     "defaultMessageLink": "https:\/\/example.com\/shipping",
     "defaultBgColor": "#423ee5",
-    "version": 1743659673,
-    "lastUpdated": "2025-04-03 14:54:33",
+    "version": 1743660642,
+    "lastUpdated": "2025-04-03 15:10:42",
     "siteId": "site2"
 }
